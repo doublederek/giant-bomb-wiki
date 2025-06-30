@@ -31,13 +31,6 @@
           "media": "screen"
         }
       }
-    },
-    "skins.giantbomb.test": {
-      "styles": [
-        "resources/css/style.css"
-      ],
-      "localBasePath": ".",
-      "remoteSkinPath": "GiantBomb"
     }
   },
   "ResourceFileModulePaths": {
