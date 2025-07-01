@@ -19,6 +19,16 @@ We should add stuff here.
 - TODO: Learn about these!
 - You can disable/enable skins by editing the LocalSettings.php file. See https://www.mediawiki.org/wiki/Manual:LocalSettings.php
 
+## skins.GiantBomb
+- Built using Vue 3 and TypeScript
+- Install all dependencies:
+  - `cd skins/GiantBomb && npm install`
+- Use `npm run dev` to build all Vue's and restart docker container in your browser
+- `App.vue` is main entry point
+  - Renders Vue container into `GiantBombTemplate.php`
+- Use `/resources/css/styles.css` for all CSS overrides
+- Perform local styling directly onto Vue components 
+
 ## TODO's
 
 - ~~We should probably remove a lot of the stuff in this repo that could be generated/downloaded from MediaWiki via cli. Probably.~~

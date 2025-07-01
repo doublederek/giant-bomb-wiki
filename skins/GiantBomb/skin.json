@@ -1,0 +1,45 @@
+{
+    "name": "GiantBomb",
+    "author": ["Your Name or Team"],
+    "url": "https://www.giantbomb.com/",
+    "description": "A custom MediaWiki skin for the Giant Bomb Wiki.",
+    "license-name": "MIT",
+    "type": "skin",
+    "ValidSkinNames": {
+      "giantbomb": {
+        "class": "SkinGiantBomb",
+        "args": [
+          {
+            "name": "giantbomb",
+            "template": "GiantBombTemplate",
+            "styles": [
+              "skins.giantbomb"
+            ]
+          }
+        ]
+      }
+    },
+    "AutoloadClasses": {
+      "SkinGiantBomb": "includes/SkinGiantBomb.php",
+      "GiantBombTemplate": "includes/GiantBombTemplate.php"
+    },
+    "ResourceModules": {
+      "skins.giantbomb": {
+        "class": "MediaWiki\\ResourceLoader\\SkinModule",
+        "packageFiles": [
+            "/dist/app.js",
+            "/dist/styles.css"
+        ],
+        "styles": {
+          "resources/css/styles.css": {
+            "media": "screen"
+          }
+        }
+      }
+    },
+    "ResourceFileModulePaths": {
+      "localBasePath": "",
+      "remoteSkinPath": "GiantBomb"
+    },
+    "manifest_version": 2
+  } 
