@@ -18,6 +18,9 @@ We should add stuff here.
 
 - TODO: Learn about these!
 - You can disable/enable skins by editing the LocalSettings.php file. See https://www.mediawiki.org/wiki/Manual:LocalSettings.php
+- Add the following to your `LocalSettings.php` to load the Giant Bomb skin
+  - `wfLoadSkin( 'GiantBomb' );`
+  - `$wgDefaultSkin = "giantbomb";`
 
 ## TODO's
 
