@@ -7,9 +7,6 @@
     "dev": "vite build && docker compose restart",
     "build": "vite build"
   },
-  "dependencies": {
-    "vue": "^3.5.17"
-  },
   "devDependencies": {
     "@types/node": "^24.0.8",
     "@vitejs/plugin-vue": "^6.0.0",
