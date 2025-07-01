@@ -1,7 +1,6 @@
 .env*
 LocalSettings.php
 config/LocalSettings.php
-package-lock.json
 
 vendor/
 node_modules/

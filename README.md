@@ -20,6 +20,10 @@ We should add stuff here.
 - You can disable/enable skins by editing the LocalSettings.php file. See https://www.mediawiki.org/wiki/Manual:LocalSettings.php
 
 ## skins.GiantBomb
+- Add the GiantBomb skin to your `LocalSettings.php` file
+  - At the bottom of `LocalSettings.php` add the following:
+    - `wfLoadSkin( 'GiantBomb' );`
+    - `$wgDefaultSkin = "giantbomb";`
 - Built using Vue 3 and TypeScript
 - Install all dependencies:
   - `cd skins/GiantBomb && npm install`
