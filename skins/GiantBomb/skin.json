@@ -1,6 +1,6 @@
 {
     "name": "GiantBomb",
-    "author": ["Your Name or Team"],
+    "author": "Giant Bomb Wiki Street Team",
     "url": "https://www.giantbomb.com/",
     "description": "A custom MediaWiki skin for the Giant Bomb Wiki.",
     "license-name": "MIT",
@@ -24,9 +24,14 @@
       "GiantBombTemplate": "includes/GiantBombTemplate.php"
     },
     "ResourceModules": {
-        "skins.giantbomb.vuebutton": {
+        "skins.giantbomb.vuecomponentexample": {
             "scripts": [
-                "resources/components/VueButton.js"
+                "resources/components/VueComponentExample.js"
+            ]
+        },
+        "skins.giantbomb.styles": {
+            "styles": [
+                "resources/css/styles.css"
             ]
         },
         "skins.giantbomb": {
@@ -34,14 +39,9 @@
                 "resources/components/index.js"
             ],
             "dependencies": [
-                "skins.giantbomb.vuebutton",
+                "skins.giantbomb.vuecomponentexample",
                 "vue"
-            ],
-            "styles": {
-                "resources/css/styles.css": {
-                    "media": "screen"
-                }
-            }
+            ]
         }
     },
     "ResourceFileModulePaths": {

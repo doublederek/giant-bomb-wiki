@@ -8,6 +8,7 @@ class SkinGiantBomb extends SkinTemplate {
     public function initPage( OutputPage $out ) {
         parent::initPage( $out );
     
+        $out->addModuleStyles( 'skins.giantbomb.styles' );
         $out->addModules( [ 'skins.giantbomb' ] );
     }
 }
