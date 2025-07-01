@@ -1,5 +1,9 @@
+const name = 'VueComponentExample';
+const props = ['label'];
+const template = `<p>{{ label }}</p>`;
+
 module.exports = {
-    name: 'VueComponentExample',
-    props: [ 'label' ],
-    template: `<p>{{ label }}</p>`
+    name,
+    props,
+    template
 };
