@@ -5,9 +5,9 @@ body {
 }
 
 .highlight {
-  color: #D9792D;
+  color: #d9792d;
 }
 
 .red-gradient {
-  background: linear-gradient(90deg, #AE1818 0%, #9B1616 100%);
+  background: linear-gradient(90deg, #ae1818 0%, #9b1616 100%);
 }

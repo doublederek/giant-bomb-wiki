@@ -7,7 +7,7 @@
     width: 80vw;
   }
 }
-  
+
 #tig-container {
   width: 90vw;
   h1 {
@@ -35,7 +35,7 @@
     }
   }
 }
-  
+
 .game-card-base {
   display: flex;
   align-items: flex-end;
@@ -48,11 +48,12 @@
     width: 100%;
     background-color: #141414aa;
   }
-  .game-title-and-date{
+  .game-title-and-date {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  h2, h4 {
+  h2,
+  h4 {
     margin: 0;
     margin-left: 1rem;
     margin-right: 3rem;
