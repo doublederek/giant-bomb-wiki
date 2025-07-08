@@ -18,8 +18,8 @@ document.querySelectorAll(".wiki-btn").forEach(function (btn) {
     }
     fetch(
       `/skins/GiantBomb/includes/partials/results.php?title=${encodeURIComponent(
-        title
-      )}`
+        title,
+      )}`,
     )
       .then((response) => response.text())
       .then((html) => {
