@@ -1,35 +1,30 @@
 <?php
 use MediaWiki\Html\TemplateParser;
 
-$jsonFile = __DIR__ . '/../../resources/data/sampleGames.json';
+$gamesJson = __DIR__ . '/../../resources/data/sampleGames.json';
+$buttonsJson = __DIR__ . '/../../resources/data/categoryButtons.json';
 
-// Check if the file exists
-if (file_exists($jsonFile)) {
-    // Get contents of JSON file
-    $jsonContent = file_get_contents($jsonFile);
+// Get contents of JSON file
+$gamesContent = file_get_contents($gamesJson);
+$buttonsContent = file_get_contents($buttonsJson);
 
-    // Decode JSON into PHP array
-    $games = json_decode($jsonContent, true);
+// Decode JSON into PHP array
+$games = json_decode($gamesContent, true);
+$buttons = json_decode($buttonsContent, true);
 
-    $hotGames = array_slice($games, 0, 3);
-    $tigGames = array_slice($games, 0, 6);
-    $randomGames = [...$games, ...$games];
+$hotGames = array_slice($games, 0, 3);
+$tigGames = array_slice($games, 0, 6);
+$randomGames = [...$games, ...$games];
+
+$buttonData = [];
+
+// Populate buttonData from buttons array
+foreach ($buttons as $button) {
+    $buttonData[] = [
+        'title' => $button,
+        'label' => $button
+    ];
 }
-
-$buttonData = [
-    [ 'title' => 'Home',         'label' => 'Home' ],
-    [ 'title' => 'New Releases', 'label' => 'New Releases' ],
-    [ 'title' => 'Games',        'label' => 'Games' ],
-    [ 'title' => 'Franchises',   'label' => 'Franchises' ],
-    [ 'title' => 'Characters',   'label' => 'Characters' ],
-    [ 'title' => 'Platforms',    'label' => 'Platforms' ],
-    [ 'title' => 'People',       'label' => 'People' ],
-    [ 'title' => 'Companies',    'label' => 'Companies' ],
-    [ 'title' => 'Objects',      'label' => 'Objects' ],
-    [ 'title' => 'Concepts',     'label' => 'Concepts' ],
-    [ 'title' => 'Locations',    'label' => 'Locations' ],
-    [ 'title' => 'Accessories',  'label' => 'Accessories' ],
-];
 
 // Set Mustache data
 $data = [
